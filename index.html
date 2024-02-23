@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Manipulação de Eventos</title>
+</head>
+<body>
+    <audio id="audio" src="GenericTutorialSong.m4a"></audio>
+
+    <!-- Botão para começar -->
+    <!-- Que ao clicar(onclick) será executado a função comecar() 
+        Obs: Não é a melhor nem a maneira mais correta de se adicionar eventos em elementos -->
+    <button onclick="comecar()" id="start" class="buttons">Clique aqui para começar os eventos </button>
+    
+
+
+
+    
+    <!-- Recomenda-se adicionar os scripts no fim da página html
+        Por serem carregados linha por linha.
+        Scripts, por serem mais lentos, farão que a página demore mais para carregá-la
+        por completa. Em páginas mais complexas dessa de exemplo, seria muito mais demorado 
+        para carregar a página tento o script no topo dela. -->
+    
+    
+        <!-- type="text/javascript" desnecessário atualmente,
+        mas com seu uso, o vs code reconhece o script inline -->
+    <script type="text/javascript"> 
+        // Podemos utilizar o script inline para usar o JS dentro do HTML
+        
+        /* Detalhes básicos
+         * No javascript é opcional a utilização de ';'
+         * Tipagem dinâmica e fraca
+         */
+        console.log('Javascript Inline');
+    </script>
+
+    <!-- Importação do seu script -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
