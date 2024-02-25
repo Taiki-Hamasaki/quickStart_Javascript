@@ -14,8 +14,27 @@
         Obs: Não é a melhor nem a maneira mais correta de se adicionar eventos em elementos -->
     <button onclick="comecar()" id="start" class="buttons">Clique aqui para começar os eventos </button>
     
+    <div class="pop_up" id="pop_upJS">
+        <div style="position: relative;">
+            <span style="position: absolute; top: 0.4rem;right: 0.4rem; font-size: 2rem; font-family: 'Nunito';
+            user-select: none;" id="fechar">X</span>
+            <img src="https://miro.medium.com/v2/resize:fit:960/1*-tOldEbfjijxn9VqZeULqg.gif" alt="">
+            <p>Javascript é poderoso!</p>
+        </div>
+    </div>
 
+    <div class="pop_up" id="pop_upForm">
+        <div style="position: relative;">
+            <span style="position: absolute; top: 0.4rem;right: 0.4rem; font-size: 2rem; font-family: 'Nunito';
+            user-select: none;" id="fecharForm">X</span>
+            <p>Formulário com e sem JS</p>
 
+            <input type="text" placeholder="CPF sem JS">
+            <br>
+            <!-- Código de máscara importado da comunidade -->
+            <input type="text" placeholder="CPF com JS" onkeyup="mascara('###.###.###-##',this,event,false)">
+        </div>
+    </div>
 
     
     <!-- Recomenda-se adicionar os scripts no fim da página html
@@ -40,5 +59,6 @@
     <!-- Importação do seu script -->
     <script src="js/script.js"></script>
     
+    <script src="js/mascara.min.js"></script>
 </body>
 </html>
